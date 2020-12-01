@@ -1,8 +1,15 @@
-# favorite words
+# Favorite-words
 
-generated from [HYF favorite word template](https://github.com/HackYourFutureBelgium/favorite-word)    
-### what to do
-from [HYF behavior-strategy-implementation - week 3](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation)    
+Generated from [HYF favorite word template](https://github.com/HackYourFutureBelgium/favorite-word)    
+
+- [Backlog](./project-planning/backlog.md)
+- [Development strategy](./project-planning/development-strategy.md)
+---
+### What to do
+
+- [clip on vimeo](https://vimeo.com/485101478)   
+
+From [HYF behavior-strategy-implementation - week 3](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation)    
 
 > Group Project, [favorite-word](https://github.com/HackYourFutureBelgium/favorite-word)
 
@@ -47,4 +54,8 @@ Use this in your `group-project` issue:
 - [ ] [one branch per step](https://github.com/_/_/branches)
 - [ ] [one closed PR per step](https://github.com/_/_/pulls)
 ```
+
+---
+[TOP](#favorite-words)
+
 
