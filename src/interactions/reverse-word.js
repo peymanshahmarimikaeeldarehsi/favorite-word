@@ -14,10 +14,13 @@ const reverseWord = () => {
   // 3. render a final before/after message with favoriteWord and the new string from ^ up there
   // 4. alert the rendered message
 
-  favoriteWord = 'test me';
+  //favoriteWord = 'test me'; //to test
   if (favoriteWord === '') {
     displayWord();
   } else {
+    //confirm
+    const askToConfirm = confirm('do you want to proceed?');
+    if (!askToConfirm) return;
 
     const reversedString = reverseString(favoriteWord);
     const description = 'your favorite word reversed';

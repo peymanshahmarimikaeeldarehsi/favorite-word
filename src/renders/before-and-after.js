@@ -10,8 +10,8 @@ console.log('--- loading render --> ');
  * @returns {string} a formatted before/after message
  */
 
-const beforeAndAfter = (beforeValue, afterValue, description ='') => {
-  if (description.trim()!=''){
+const beforeAndAfter = (beforeValue, afterValue, description = '') => {
+  if (description.trim() != '') {
     description = `${description}:\n`;
   }
   const feedback = `${description}before: "${beforeValue}"\nafter: "${afterValue}"`;
@@ -34,12 +34,12 @@ const beforeAndAfter = (beforeValue, afterValue, description ='') => {
     );
     console.assert(
       beforeAndAfter('', '', 'all done!') ===
-        'all done!\nbefore: ""\nafter: ""',
+      'all done!\nbefore: ""\nafter: ""',
       'Test 2'
     );
     console.assert(
       beforeAndAfter('start', 'finish', 'all done!') ===
-        'all done!\nbefore: "start"\nafter: "finish"',
+      'all done!\nbefore: "start"\nafter: "finish"',
       'Test 3'
     );
   } catch (err) {
