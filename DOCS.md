@@ -110,6 +110,7 @@ if there is no word, the user is told so
 
 allows a user to set a new value for the saved word.
 if there's already a saved word, they are asked to confirm replacing it
+uses reverse-string.js
 
 ---
 
