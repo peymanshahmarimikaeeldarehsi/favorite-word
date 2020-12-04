@@ -9,7 +9,15 @@ console.log('--- loading render --> ');
  * @param {string} [description=''] - describing what changes were made
  * @returns {string} a formatted before/after message
  */
-const beforeAndAfter = () => {};
+
+const beforeAndAfter = (beforeValue, afterValue, description ='') => {
+  if (description.trim()!=''){
+    description = `${description}:\n`;
+  }
+  const feedback = `${description}before: "${beforeValue}"\nafter: "${afterValue}"`;
+  //they cannot use prompt, alert or confirm (you will alert the return value)
+  return feedback;
+};
 
 {
   const consoleLog = console.log;
