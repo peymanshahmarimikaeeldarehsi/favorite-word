@@ -14,10 +14,13 @@ const setWord = () => {
         
         const confirmedMessage = confirm(`is this correct "${deliveredMessage}"`);
         if (confirmedMessage) {
-            favoriteWord = deliveredMessage;
+            const favoriteWord = deliveredMessage;
             alert(`your favorite word is: "${favoriteWord}"`);
             break;
         };
-        continue; 
+        else{
+            continue;
+        }
+
     }
 };

@@ -4,7 +4,7 @@ console.log('--- loading interaction -->');
 
 /**
  * allows a user to set a new value for the saved word.
- * if there's already a saved word, they are asked to confirm replacing it
+ * If there's already a saved word, they are asked to confirm replacing it
  * uses reverse-string.js
  */
 

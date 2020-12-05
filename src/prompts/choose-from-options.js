@@ -9,15 +9,51 @@ console.log('--- loading prompt --> ');
  * @param {string} [instructions='pick one'] - to explain the options to the user
  * @returns {string} the selected option
  */
-const chooseFromOptions = () => {
+const chooseFromOptions = (options = ['yes', 'no'], instructions = 'pick one') => {
   // 1. render the options message for the user
   // 2. begin an I/O loop
   //  a. prompt the user with the message
   //  b. continue if the user input is empty
   //  c. continue if the user input is not in the options array
   //  d. ask the user to confirm their choice
+
+  let choice = '';
+
+  while (true) {
+    const choose = `${instructions}\n- "${options[0]}"\n- "${options[1]}"`;
+    let askToConfirm = prompt(choose);
+
+    if (!askToConfirm || askToConfirm == '') {
+      alert('there is no escape!');
+      continue;
+    }
+    if (askToConfirm !== "vowels" && askToConfirm !== "consonants") {
+      alert(`"${askToConfirm}" is not an option`);
+      continue;
+      
+    }
+    else {
+      choice = askToConfirm;
+      const sure = confirm(`are you sure?\n\n- "${choice}"`);
+
+      //confirm
+      if (sure === '' || !sure) {
+        continue;
+      }
+      else{
+        break;
+      }   
+    }
+    
+  }
+  if (choice !== '\'){
+    return choice;
+  }
+   
 };
 
+
+/*
 {
   // store I/O functions and console.log for later
   const consoleLog = console.log;
@@ -25,9 +61,9 @@ const chooseFromOptions = () => {
   const globalConfirm = confirm;
   const globalAlert = alert;
   // over-write non-interactive I/O with empty functions
-  alert = () => {};
-  console.log = () => {};
-  // a function that simulates a user inputting a series of values
+  alert = () => { };
+  console.log = () => { };
+  //a  function that simulates a user inputting a series of values
   const mockUser = (values, index = 0) => () => values[index++];
 
   try {
@@ -67,3 +103,5 @@ const chooseFromOptions = () => {
   alert = globalAlert;
   console.log = consoleLog;
 }
+*/
+
