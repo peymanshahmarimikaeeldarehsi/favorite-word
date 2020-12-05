@@ -18,21 +18,25 @@ A program to let users save and modify their favorite word. Each JavaScript file
 
 ## 0. Setup
 
-- [ ] Create repo
-- [ ] Add Contributors
-- [ ] Set up Project Board
-- [ ] Start README
-- [ ] Turn on GitHub Pages
+
+> Assigned to Peyman
+
+- [x] Create repo
+- [x] Add Contributors
+- [x] Set up Project Board
+- [x] Start README
+- [x] Turn on GitHub Pages
 
 ---
 
 ## 1. Initialize Application
 
-> complete
+> already provided
+> modified by Tahmina
 
 As a user I want to open the web page so that I can use it
 
-- [ ] _Given any browser when a user navigates to our URL then the site should appear with no errors_
+- [x] _Given any browser when a user navigates to our URL then the site should appear with no errors_
 
 ### HTML
 
@@ -50,7 +54,7 @@ As a user I want to open the web page so that I can use it
 
 ## 2. Display Word
 
-> complete
+> Assigned to Tahima
 
 As a user I want to display the saved word
 
@@ -83,10 +87,12 @@ As a user I want to display the saved word
 
 ## 3. Set Word
 
+> Assigned to Burak
+
 As a user I want to set my favorite word
 
-- [ ] _Given the word is empty, when a user clicks the button they will be prompted for a new favorite word. after the word is saved it will be displayed_
-- [ ] _Given there is a saved word, when a user clicks the button they will need to confirm replacing the saved word before being prompted to enter a new one. after the word is saved it will be displayed_
+- [x] _Given the word is empty, when a user clicks the button they will be prompted for a new favorite word. after the word is saved it will be displayed_
+- [x] _Given there is a saved word, when a user clicks the button they will need to confirm replacing the saved word before being prompted to enter a new one. after the word is saved it will be displayed_
 
 ### HTML
 
@@ -109,10 +115,13 @@ As a user I want to set my favorite word
 
 ## 4. Clear Word
 
+
+> Assigned to Burak
+
 As a user I want to be clear the saved word so I can start over
 
-- [ ] _Given there is **not** a saved word, when a user clicks the button they will be alerted that there was nothing to clear_
-- [ ] _Given there is a saved word, when a user clicks the button they will be asked to confirm clearing the word_
+- [x] _Given there is **not** a saved word, when a user clicks the button they will be alerted that there was nothing to clear_
+- [x] _Given there is a saved word, when a user clicks the button they will be asked to confirm clearing the word_
 
 ### HTML
 
@@ -130,10 +139,13 @@ As a user I want to be clear the saved word so I can start over
 
 ## 5. Reverse Word
 
+
+> Assigned to Bermarte
+
 As a user I want to reverse my favorite word so that I can see it backwards
 
-- [ ] _Given there is **not** a saved word, when a user clicks this button they will be told there is nothing to reverse_
-- [ ] _Given there is a saved word, when a user clicks the button they will be asked to confirm they want to reverse the word. after the word is reversed it will be displayed. the reversed word is not saved_
+- [x] _Given there is **not** a saved word, when a user clicks this button they will be told there is nothing to reverse_
+- [x] _Given there is a saved word, when a user clicks the button they will be asked to confirm they want to reverse the word. after the word is reversed it will be displayed. the reversed word is not saved_
 
 ### HTML
 
@@ -161,10 +173,13 @@ As a user I want to reverse my favorite word so that I can see it backwards
 
 ## 6. Remove Vowels or Consonants
 
+
+> Assigned to Bermarte
+
 As a user I want to either remove all the vowels or all the consonants from my word so it is harder to read.
 
-- [ ] _Given there is **not** a saved word, when a user clicks this button they will be told there is no word._
-- [ ] _Given there is a saved word, when a user clicks this button they will be asked to choose between removing all vowels or all consonants. after the word has been updated it will be displayed_
+- [x] _Given there is **not** a saved word, when a user clicks this button they will be told there is no word._
+- [x] _Given there is a saved word, when a user clicks this button they will be asked to choose between removing all vowels or all consonants. after the word has been updated it will be displayed_
 
 ### HTML
 
@@ -191,6 +206,9 @@ As a user I want to either remove all the vowels or all the consonants from my w
 ---
 
 ## 7. Repeat Word or Characters
+
+
+> Assigned to Peyman
 
 As a user I want to either repeat my whole word, or each character in the word so that there is more of my favorite word.
 
