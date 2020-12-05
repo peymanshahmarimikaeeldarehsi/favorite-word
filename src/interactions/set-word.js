@@ -8,4 +8,16 @@ console.log('--- loading interaction -->');
  * if there is a saved word, the user is asked to confirm replacing it.
  * if the user confirms, they enter a new word that replaces the old one.
  */
-const setWord = () => {};
+const setWord = () => {
+    while (true) {
+        let deliveredMessage = enterWord();
+        
+        const confirmedMessage = confirm(`is this correct "${deliveredMessage}"`);
+        if (confirmedMessage) {
+            favoriteWord = deliveredMessage;
+            alert(`your favorite word is: "${favoriteWord}"`);
+            break;
+        };
+        continue; 
+    }
+};
