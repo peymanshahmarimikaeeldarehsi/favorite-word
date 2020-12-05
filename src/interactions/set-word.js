@@ -17,7 +17,7 @@ const setWord = () => {
             const favoriteWord = deliveredMessage;
             alert(`your favorite word is: "${favoriteWord}"`);
             break;
-        };
+        }
         else{
             continue;
         }
