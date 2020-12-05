@@ -17,7 +17,7 @@ const chooseFromOptions = (options = ['yes', 'no'], instructions = 'pick one') =
   //  c. continue if the user input is not in the options array
   //  d. ask the user to confirm their choice
 
-  let choice = '';
+  let choice;
 
   while (true) {
     const choose = `${instructions}\n- "${options[0]}"\n- "${options[1]}"`;
@@ -27,30 +27,27 @@ const chooseFromOptions = (options = ['yes', 'no'], instructions = 'pick one') =
       alert('there is no escape!');
       continue;
     }
-    if (askToConfirm !== "vowels" && askToConfirm !== "consonants") {
-      alert(`"${askToConfirm}" is not an option`);
-      continue;
-      
-    }
-    else {
+    if (askToConfirm === "vowels" || askToConfirm === "consonants") {
+
       choice = askToConfirm;
+      //confirm
       const sure = confirm(`are you sure?\n\n- "${choice}"`);
 
       //confirm
       if (sure === '' || !sure) {
         continue;
       }
-      else{
+      else {
         break;
-      }   
+      }
     }
-    
+    else {
+      alert(`"${askToConfirm}" is not an option`);
+      continue;
+    }
   }
-  if (choice !== ''){
-    return choice;
-  }
-   
-};
+  return choice;
+}
 
 
 /*
@@ -104,4 +101,3 @@ const chooseFromOptions = (options = ['yes', 'no'], instructions = 'pick one') =
   console.log = consoleLog;
 }
 */
-
