@@ -46,7 +46,7 @@ const chooseFromOptions = (options = ['yes', 'no'], instructions = 'pick one') =
     }
     
   }
-  if (choice !== '\'){
+  if (choice !== ''){
     return choice;
   }
    
