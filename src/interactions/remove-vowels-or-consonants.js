@@ -14,27 +14,27 @@ const removeVowelsOrConsonants = () => {
   // 4. render a final before/after message with favoriteWord and the new string from ^ up there
   // 5. alert the rendered message
 
-  favoriteWord = 'test me'; //to test
+  //favoriteWord = 'test_me'; //to test
+  let outString = '';
   if (favoriteWord === '') {
     displayWord();
   } else {
     
     const chooseBetween = ['do you want to remove all vowels or all consonants?','vowels', 'consonants' ];
-    //chooseFromOptions(chooseBetween.slice(1,), chooseBetween[0]);
-    chooseFromOptions( ['vowels', 'consonants'], 'do you want to remove all vowels or all consonants?');
+    // should return "vowels" or "consonants"
+    const res = chooseFromOptions(chooseBetween.slice(1,), chooseBetween[0]);
 
-    
-    //const chooseBetween = `do you want to remove all vowels or all consonants?\n- "vowels"\n- "consonants"`
-    
-    
-    //prompt
-    //const askToConfirm = prompt(chooseBetween);
-    //if (!askToConfirm) return;
+    //remove vowels or consonants depending on the value of res
+    if (res === 'vowels'){
+      outString = favoriteWord.replace(/[aeiouAEIOU]/g, ''); 
+    }
+    else if (res === 'consonants'){
+      outString = favoriteWord.replace(/[bcdgfhjklmnpqrstvwxyzBCDGFHJKLMNPQRSTVWXYZ]/g, '');
+    }
 
-    // const reversedString = reverseString(favoriteWord);
-    // const description = 'your favorite word reversed';
-    // //render
-    // const render = beforeAndAfter(favoriteWord, reversedString, description);
-    //alert(render);
+    //render
+    const render = beforeAndAfter(favoriteWord, outString);
+    alert(render);
+
   }
 };

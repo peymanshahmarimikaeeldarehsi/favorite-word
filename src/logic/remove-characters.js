@@ -8,7 +8,7 @@ console.log('--- loading logic --> ');
  * @param {string} [charactersToRemove=''] - string of characters to remove
  * @returns {string} new string with all provided characters removed
  */
-const removeCharacters = () => {};
+const removeCharacters = (text='', charactersToRemove='') => {};
 
 {
   const consoleLog = console.log;
