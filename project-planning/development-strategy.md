@@ -31,8 +31,7 @@ A program to let users save and modify their favorite word. Each JavaScript file
 
 ## 1. Initialize Application
 
-> already provided
-> modified by Tahmina
+> already provided and modified by Tahmina
 
 As a user I want to open the web page so that I can use it
 
