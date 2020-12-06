@@ -27,7 +27,7 @@ const chooseFromOptions = (options = ['yes', 'no'], instructions = 'pick one') =
       alert('there is no escape!');
       continue;
     }
-    if (askToConfirm === "vowels" || askToConfirm === "consonants") {
+    if (askToConfirm === options[0] || askToConfirm === options[1]) {
 
       choice = askToConfirm;
       //confirm
