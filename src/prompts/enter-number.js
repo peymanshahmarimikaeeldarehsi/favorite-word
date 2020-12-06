@@ -8,7 +8,25 @@ console.log('--- loading prompt --> ');
  * @param {string} [message='enter a number'] - the text displayed to the user
  * @returns {number} a number cast from the user input (never NaN)
  */
-const enterNumber = () => {};
+const enterNumber = () => {
+  while (true) {
+    const repetation = prompt('how many times would you like to repeat word');
+    if (repetation === null || repetation.trim() === '') {
+      alert('nope, gotta enter something.')
+      continue;
+    } else if (!((Number.isInteger(Number(repetation))) && (Number(repetation) > 0))) {
+      alert(`"${repetation}" is not a number`);
+      continue;
+    } else {
+      const confirmedRepetation = confirm(`is this correct \n "${repetation}"`);
+      if (confirmedRepetation) {
+        return repetation;
+      } else {
+        continue;
+      }
+    }
+  }
+};
 
 {
   // store I/O functions and console.log for later
