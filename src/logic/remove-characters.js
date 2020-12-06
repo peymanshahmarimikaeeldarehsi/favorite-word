@@ -8,7 +8,14 @@ console.log('--- loading logic --> ');
  * @param {string} [charactersToRemove=''] - string of characters to remove
  * @returns {string} new string with all provided characters removed
  */
-const removeCharacters = (text='', charactersToRemove='') => {};
+const removeCharacters = (text='', charactersToRemove='') => {
+
+  var re = RegExp(charactersToRemove, 'gi');
+  var strout = text.replace(re, '');
+
+  return strout;
+
+}
 
 {
   const consoleLog = console.log;

@@ -14,8 +14,11 @@ const removeVowelsOrConsonants = () => {
   // 4. render a final before/after message with favoriteWord and the new string from ^ up there
   // 5. alert the rendered message
 
-  //favoriteWord = 'test_me'; //to test
+  //favoriteWord = 'test_me'; //uncomment to test
   let outString = '';
+  const vowels = '[aeiouAEIOU]';
+  const consonants = '[bcdgfhjklmnpqrstvwxyzBCDGFHJKLMNPQRSTVWXYZ]';
+
   if (favoriteWord === '') {
     displayWord();
   } else {
@@ -26,10 +29,10 @@ const removeVowelsOrConsonants = () => {
 
     //remove vowels or consonants depending on the value of res
     if (res === 'vowels'){
-      outString = favoriteWord.replace(/[aeiouAEIOU]/g, ''); 
+      outString = removeCharacters(favoriteWord, vowels);
     }
     else if (res === 'consonants'){
-      outString = favoriteWord.replace(/[bcdgfhjklmnpqrstvwxyzBCDGFHJKLMNPQRSTVWXYZ]/g, '');
+      outString = removeCharacters(favoriteWord, consonants);
     }
 
     //render
