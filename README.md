@@ -2,6 +2,7 @@
 
 Generated from [HYF favorite word template](https://github.com/HackYourFutureBelgium/favorite-word)    
 
+- [Live demo](https://peymanshahmarimikaeeldarehsi.github.io/favorite-word/)
 - [Backlog](./project-planning/backlog.md)
 - [Development strategy](./project-planning/development-strategy.md)
 - [Group issue](https://github.com/HackYourFutureBelgium/class-11-12/issues/207)
