@@ -11,17 +11,15 @@ console.log('--- loading prompt --> ');
  */
 const enterWord = () => {
   // there is a hint at the bottom of this page
-  const message = prompt('enter your favorite word');
   while (true) {
+    const message = prompt('enter your favorite word');
     if (message === null || message.trim() === '') {
       alert('nope, gotta enter something.')
       continue;
     }
-    else{
-      break;
-    }
+    return message;
+
   }
-  return message;
 };
 
 {
