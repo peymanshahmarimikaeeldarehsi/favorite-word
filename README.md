@@ -5,6 +5,7 @@ Generated from [HYF favorite word template](https://github.com/HackYourFutureBel
 - [Backlog](./project-planning/backlog.md)
 - [Development strategy](./project-planning/development-strategy.md)
 - [Group issue](https://github.com/HackYourFutureBelgium/class-11-12/issues/207)
+- [JS Collaborative Development](https://github.com/HackYourFutureBelgium/javascript-30)
 ---
 ### What to do
 
