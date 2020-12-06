@@ -23,37 +23,20 @@ const repeatWordOrCharacters = () => {
 
     
     if (result === 'word'){
-      // outString = removeCharacters(favoriteWord, vowels);
+      
       let deliveredNumber = enterNumber();
-
-      let repetationWord = '';
-
-            for (let i = 0; i < Number(deliveredNumber); i++) {
-              repetationWord += favoriteWord;
-            }
-            alert(`word repeated ${deliveredNumber} times
-                before: "${favoriteWord}"
-                after: "${repetationWord}"`);
+      const outputString = repeatString(favoriteWord, Number(deliveredNumber))
+      alert(`word repeated ${deliveredNumber} times \nbefore: "${favoriteWord}" \nafter: "${outputString}"`);
     }
     else if (result === 'characters'){
-      // outString = removeCharacters(favoriteWord, consonants);
+      
       let deliveredNumber = enterNumber();
       
-      let repetationCharacter = '';
-            for (let i = 0; i < favoriteWord.length; i++) {
-              for (let j = 0; j < Number(deliveredNumber); j++) {
-                repetationCharacter += favoriteWord[i];
-              }
+      const outputString = repeatCharacters(favoriteWord, Number(deliveredNumber))
+      
+      alert(`word repeated ${deliveredNumber} times \nbefore: "${favoriteWord}" \nafter: "${outputString}"`);
 
-            }
-            alert(`characters repeated ${deliveredNumber} times
-                before: "${favoriteWord}"
-                after: "${repetationCharacter}"`);
     }
-
-    //render
-    // const render = beforeAndAfter(favoriteWord, outString);
-    // alert(render);
 
   }
 };

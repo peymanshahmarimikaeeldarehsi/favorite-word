@@ -8,7 +8,18 @@ console.log('--- loading logic --> ');
  * @param {number} [repetitions=1] - how many time to repeat each character
  * @returns {string} the string with each character repeated
  */
-const repeatCharacters = () => {};
+const repeatCharacters = (text = '', repetitions = 1) => {
+     
+  let repetationCharacter = '';
+  for (let i = 0; i < favoriteWord.length; i++) {
+    for (let j = 0; j < repetitions; j++) {
+      repetationCharacter += text[i];
+    }
+
+  }
+  return repetationCharacter;
+
+};
 
 {
   const consoleLog = console.log;

@@ -8,11 +8,18 @@ console.log('--- loading logic --> ');
  * @param {number} [repetitions=1] - how many time to repeat the string
  * @returns {string} the repeated string
  */
-const repeatString = () => {};
+const repeatString = (text = '', repetitions = 1) => {
+  let repetationWord = '';
+
+  for (let i = 0; i < repetitions; i++) {
+    repetationWord += text;
+  }
+  return repetationWord;
+};
 
 {
   const consoleLog = console.log;
-  console.log = () => {};
+  console.log = () => { };
 
   try {
     console.assert(repeatString('asdf') === 'asdf', 'Test 0 a');
@@ -26,7 +33,7 @@ const repeatString = () => {};
     console.assert(repeatString('', 2) === '', 'Test 7');
     console.assert(
       repeatString('mississippi', 7) ===
-        'mississippimississippimississippimississippimississippimississippimississippi',
+      'mississippimississippimississippimississippimississippimississippimississippi',
       'Test 8'
     );
   } catch (err) {
